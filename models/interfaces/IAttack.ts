@@ -1,3 +1,3 @@
 export default interface IAttack {
-    do(): void;
+    attack(): void;
 }

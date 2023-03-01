@@ -1,48 +1,29 @@
 import IAction from "../../interfaces/IAction";
-import IArmor from "../../interfaces/IArmor";
 import IAttack from "../../interfaces/IAttack";
 import IDefend from "../../interfaces/IDefend";
-import IWeapon from "../../interfaces/IWeapon";
+import Armor from "./Armor";
+import Weapon from "./Weapon";
 export default abstract class Warrior implements IAction{
 
-    abstract health:number;
-    abstract weapon:IWeapon;
-    abstract armor:IArmor;
+  protected health:number;
+  protected weapon:Weapon;
+  protected armor:Armor;
 
-    constructor(hp:number,armor:IArmor,weapon:IWeapon){
-        this.SetHP = hp;
-        this.SetWeapon = weapon;
-        this.SetArmor = armor;
-    }
-
-    get GetHP():number{
-        return this.health;
-    }
-    set SetHP(HP:number){
-        this.health = HP;
-    }
-    get GetArmor():IArmor{
-        return this.armor;
-    }
-    set SetArmor(armor:IArmor):IArmor{
-        this.armor = armor;
-    }
-    get GetWeapon():IWeapon{
-        return this.weapon;
-    }
-    set SetWeapon(weapon:IWeapon):IWeapon{
-        this.weapon = weapon;
-    }
-    Move():void{
-
-    }
-    Fight(action:IAttack):void{
-
-    }
-    Defend(action:IDefend):void{
-
-    }
-    RunAway():void{
-
-    }
+  constructor(health:number,weapon:Weapon,armor:Armor){
+    this.health = health;
+    this.weapon = weapon;
+    this.armor = armor;
   }
+  Move():void{
+     
+  }
+  Fight(action:IAttack):void{
+     
+  }
+  Defend(action:IDefend):void{
+
+  }
+  RunAway():void{
+
+  }
+}
