@@ -11,19 +11,9 @@ export default abstract class Weapon implements IWeapon{
         this.weight = weigth;
     }
 
-    Attack():void{
-
-    }
-    HardAttack():void{
-
-    }
-    Equip():void{
-        
-    }
-    Throw():void{
-
-    }
-    Defend():void{
-
-    }
+    abstract Attack():void;
+    abstract HardAttack():void;
+    abstract Equip():void;
+    abstract Throw():void;
+    abstract Defend():void;
 }

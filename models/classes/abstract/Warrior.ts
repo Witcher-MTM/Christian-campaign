@@ -14,16 +14,8 @@ export default abstract class Warrior implements IAction{
     this.weapon = weapon;
     this.armor = armor;
   }
-  Move():void{
-     
-  }
-  Fight(action:IAttack):void{
-     
-  }
-  Defend(action:IDefend):void{
-
-  }
-  RunAway():void{
-
-  }
+  abstract Move():void;
+  abstract Fight(action:IAttack):void;
+  abstract Defend(action:IDefend):void;
+  abstract RunAway():void;
 }
