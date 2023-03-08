@@ -1,7 +1,7 @@
 import Armor from "@/../models/classes/Armor/Armor";
 import IAtack from "@/../models/interfaces/IAttack";
 import IDefend from "@/../models/interfaces/IDefend";
-import Infantry from "../../../Infantry";
+import Infantry from "../../Infantry";
 
 export default class HardInfantry extends Infantry{
     constructor(health:number,armor:Armor){
