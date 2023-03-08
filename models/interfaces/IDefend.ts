@@ -1,3 +1,3 @@
 export default interface IDefend {
-  defend(): void;
+  Defend(): void;
 }

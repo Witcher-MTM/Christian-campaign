@@ -1,7 +1,10 @@
-export default interface IWeapon {
-    Attack():void;
-    HardAttack():void;
+import IAtack from "./IAttack";
+import IDefend from "./IDefend";
+
+
+export default interface IWeapon{
     Equip():void;
     Throw():void;
-    Defend():void;
+    Defend(action:IDefend):void;
+    Atack(action:IAtack):void;
 }

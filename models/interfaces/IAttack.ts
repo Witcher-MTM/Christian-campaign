@@ -1,3 +1,5 @@
-export default interface IAttack {
-    attack(): void;
+export default interface IAtack {
+    Atack():void;
+    CritAtack():void;
+    Miss():void;
 }
