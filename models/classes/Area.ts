@@ -1,4 +1,4 @@
-import Armor from "./abstract/Armor";
+import Armor from "./Armor/Armor";
 import Weapon from "./abstract/Weapon";
 import Soldier from "./Soldier";
 

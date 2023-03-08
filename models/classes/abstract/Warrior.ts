@@ -1,7 +1,7 @@
 import IAction from "../../interfaces/IAction";
 import IAttack from "../../interfaces/IAttack";
 import IDefend from "../../interfaces/IDefend";
-import Armor from "./Armor";
+import Armor from "../Armor/Armor";
 import Weapon from "./Weapon";
 export default abstract class Warrior implements IAction{
 

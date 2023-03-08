@@ -2,7 +2,10 @@ import IArmor from "../../interfaces/IArmor";
 
 export default abstract class Armor implements IArmor{
 
-    constructor(protected armor:number,protected type:string){}
+  protected armor:number;
+    constructor(armor:number){
+      this.armor = armor;
+    }
 
     Equip():void{
 

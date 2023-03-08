@@ -3,7 +3,7 @@ import IAction from '../interfaces/IAction';
 import IAttack from '../interfaces/IAttack';
 import IDefend from '../interfaces/IDefend';
 import Weapon from './abstract/Weapon';
-import Armor from './abstract/Armor';
+import Armor from './Armor/Armor';
 
 export default class Soldier extends Warrior implements IAction{
   
@@ -12,6 +12,7 @@ export default class Soldier extends Warrior implements IAction{
    }
   
    Move():void{
+
    }
    Fight(action:IAttack):void{
       
